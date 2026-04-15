@@ -36,10 +36,11 @@ export default function App() {
           aria-label="Pilotos SAG Rally Team"
         >
           <div className="flex flex-col">
-            {pilotes.map((piloto) => (
+            {pilotes.map((piloto, index) => (
               <PilotCard 
                 key={piloto.id} 
-                {...piloto} 
+                {...piloto}
+                contentAlign={index === 1 ? 'right' : 'left'}
               />
             ))}
           </div>

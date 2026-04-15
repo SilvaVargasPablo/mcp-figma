@@ -13,6 +13,7 @@ export default function PilotCard({
   signatureColor,
   brandImg,
   align = 'left',
+  contentAlign = 'left',
 }) {
   const isLeft = align === 'left';
 
@@ -23,8 +24,8 @@ export default function PilotCard({
       whileHover="hover"
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.8 }}
-      className={`relative w-full flex flex-col items-center gap-6 md:gap-12 mb-16 
-                 ${isLeft ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}
+      className={`relative w-full flex flex-col md:flex-row items-start md:items-stretch gap-2 md:gap-6 mb-16 
+                  ${isLeft ? 'lg:flex-row' : 'lg:flex-row-reverse md:flex-row-reverse'}`}
     >
       {/* ── Tarjeta de Foto (Media Part) ── */}
       <div className="relative w-full max-w-full sm:max-w-[425px] md:max-w-[425px] aspect-[425/580] sm:aspect-[425/580] shrink-0 overflow-hidden rounded-[var(--radius-card)] bg-[var(--color-bg-surface)] shadow-2xl group cursor-pointer">
@@ -45,7 +46,7 @@ export default function PilotCard({
 
 
         {/* Texto "PILOTO" (Alta posición en hover) */}
-        <div className="absolute inset-x-0 top-0 flex justify-center pt-10 z-0 pointer-events-none select-none">
+        <div className="absolute inset-x-0 top-0 flex justify-center pt-6 z-0 pointer-events-none select-none">
           <motion.span 
             variants={{
               initial: { y: 120, opacity: 0, scale: 0.9 },
@@ -95,7 +96,7 @@ export default function PilotCard({
       </div>
 
       {/* ── Información Lateral (Nombre y Firma) ── */}
-      <div className={`flex flex-col flex-1 w-full max-w-[500px] md:max-w-[480px] items-center text-center md:${isLeft ? 'md:items-start md:text-left' : 'md:items-end md:text-right'}`}>
+      <div className={`flex flex-col flex-1 w-full max-w-[500px] md:max-w-[480px] md:self-start items-center text-center md:${contentAlign === 'right' ? 'md:items-end md:text-right' : 'md:items-start md:text-left'} md:mt-[45px]`}>
         
         {/* Firma Principal */}
         {signatureImg && (
@@ -121,6 +122,9 @@ export default function PilotCard({
             <span className="block">{name}</span>
             <span className="block text-white opacity-80">{lastName}</span>
           </h2>
+          <p className="font-['M_PLUS_1'] text-white/70 text-sm mt-2 max-w-[300px]">
+            {description}
+          </p>
         </motion.div>
       </div>
     </motion.div>
