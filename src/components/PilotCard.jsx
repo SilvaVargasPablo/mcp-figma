@@ -95,8 +95,7 @@ export default function PilotCard({
       </div>
 
       {/* ── Información Lateral (Nombre y Firma) ── */}
-      <div className={`flex flex-col flex-1 w-full max-w-[500px] md:max-w-[480px] 
-              ${isLeft ? 'items-start text-left' : 'items-center lg:items-end text-center lg:text-right'}`}>
+      <div className={`flex flex-col flex-1 w-full max-w-[500px] md:max-w-[480px] items-center text-center md:${isLeft ? 'md:items-start md:text-left' : 'md:items-end md:text-right'}`}>
         
         {/* Firma Principal */}
         {signatureImg && (
