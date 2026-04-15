@@ -60,7 +60,7 @@ export default function PilotCard({
               hover: { y: 0, opacity: 1, scale:  1.1 }
             }}
             transition={{ type: 'spring', stiffness: 120, damping: 18 }}
-            className="font-['M_PLUS_1'] text-white text-[clamp(2.5rem,10vw,4.5rem)] uppercase leading-none drop-shadow-2xl"
+            className="font-['M_PLUS_1'] text-white text-[clamp(1.5rem,6vw,3rem)] uppercase leading-none drop-shadow-2xl"
           >
             Piloto
           </motion.span>
