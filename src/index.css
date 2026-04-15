@@ -1,0 +1,210 @@
+/* ═══════════════════════════════════════════════════════════════
+   CSS Variables — Design Tokens extraídos del archivo Figma
+   https://www.figma.com/design/65i0slPU5qfp6sKzitTRvP/Test-Rally
+   ═══════════════════════════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'M PLUS 1';
+  src: url('/fonts/MPLUS1-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Tokens de color ─────────────────────────────────────────── */
+:root {
+  /* Fondos */
+  --color-bg-primary:   #111112;   /* brand-bg */
+  --color-bg-surface:   #171717;   /* brand-surface */
+  --color-bg-footer:    #19191A;   /* brand-footer */
+
+  /* Texto */
+  --color-white:        #FFFFFF;   /* Other/light */
+  --color-slate-400:    #94A3B8;   /* slate/400 */
+  --color-grey-300:     #A7B7CE;   /* Grey/300 */
+
+  /* Acento */
+  --color-accent:       #00FFD1;   /* brand-accent (cian) */
+
+  /* ─── Tokens de tipografía ─────────────────────────────────── */
+  /* Caption/01/Regular */
+  --font-caption-family:  'TT Norms', sans-serif;
+  --font-caption-size:    12px;
+  --font-caption-weight:  400;
+  --font-caption-line-h:  16px;
+
+  /* title/04 */
+  --font-title04-family:  'TT Norms', sans-serif;
+  --font-title04-size:    16px;
+  --font-title04-weight:  700;
+  --font-title04-line-h:  24px;
+
+  /* text-sm/leading-5/font-normal */
+  --font-body-sm-family:  'Plus Jakarta Sans', sans-serif;
+  --font-body-sm-size:    14px;
+  --font-body-sm-weight:  400;
+  --font-body-sm-line-h:  20px;
+
+  /* Display/headline — M PLUS 1 Bold */
+  --font-display-family: 'M PLUS 1', sans-serif;
+
+  /* Body copy — M PLUS 1 Medium */
+  --font-body-family: 'M PLUS 1', sans-serif;
+
+  /* ─── Espaciados ───────────────────────────────────────────── */
+  --spacing-xs:   4px;
+  --spacing-sm:   8px;
+  --spacing-md:  16px;
+  --spacing-lg:  24px;
+  --spacing-xl:  32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 80px;
+
+  /* ─── Radios de borde ──────────────────────────────────────── */
+  --radius-card:     16px;
+  --radius-image:    30px;
+  --radius-circle:  140px;
+  --radius-nav:      47px;
+  --radius-tag:      29px;
+}
+
+/* ─── Reset base ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-white);
+  font-family: var(--font-body-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* ─── Clases utilitarias de tipografía (basadas en tokens Figma) ── */
+.font-display {
+  font-family: 'M PLUS 1', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.font-body,
+.font-tt-norms {
+  font-family: 'M PLUS 1', sans-serif;
+}
+
+.text-caption {
+  font-family: var(--font-caption-family);
+  font-size: var(--font-caption-size);
+  font-weight: var(--font-caption-weight);
+  line-height: var(--font-caption-line-h);
+}
+
+.text-title-04 {
+  font-family: var(--font-title04-family);
+  font-size: var(--font-title04-size);
+  font-weight: var(--font-title04-weight);
+  line-height: var(--font-title04-line-h);
+}
+
+.text-body-sm {
+  font-family: var(--font-body-sm-family);
+  font-size: var(--font-body-sm-size);
+  font-weight: var(--font-body-sm-weight);
+  line-height: var(--font-body-sm-line-h);
+}
+
+/* ─── Animaciones ─────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s ease-out both;
+}
+.animate-delay-100 { animation-delay: 0.1s; }
+.animate-delay-200 { animation-delay: 0.2s; }
+.animate-delay-300 { animation-delay: 0.3s; }
+
+/* ─── Slider estilos ─────────────────────────────────────────── */
+.slider-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Scrollbar oculto ──────────────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }

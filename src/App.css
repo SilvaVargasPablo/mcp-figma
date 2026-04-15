@@ -1,0 +1,32 @@
+/* Limpieza de estilos por defecto para evitar conflictos con el diseño premium */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: flex-start;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+/* Forzar que las listas del diseño no hereden bullets o estilos extraños */
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: none; /* Evitar que tailwind o estilos base limiten el tamaño de decoraciones absolutas */
+}
