@@ -38,12 +38,12 @@ const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition
             <div className="flex-1 px-6 py-6 relative flex flex-col justify-start">
                 {/* Signature: absolute top-right on mobile, inline on md+ */}
                 {signatureImg && (
-                    <div className="absolute right-4 top-4 md:static md:mb-4">
-                        <img src={signatureImg} alt="firma" className="h-16 md:h-20 w-auto object-contain" />
+                    <div className="absolute left-4 top-4 md:static md:mb-4">
+                        <img src={signatureImg} alt="firma" className="h-16 md:h-20 w-20 md:w-auto object-contain" />
                     </div>
                 )}
 
-                <div className="mt-6 md:mt-2">
+                <div className="mt-20 md:mt-2">
                     <h3 className="text-2xl font-['M_PLUS_1'] font-bold text-white leading-tight mb-4">
                         {title}
                     </h3>
