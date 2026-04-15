@@ -1,6 +1,6 @@
 import {
   imgPiloto1Foto, imgPiloto2Foto, imgPiloto3Foto,
-  imgRecurso4, imgRecurso3,
+  imgRecurso5, imgRecurso7,
 } from '../assets.js';
 
 const DESCRIPTION_PILOTO =
@@ -13,8 +13,8 @@ export const pilotes = [
     lastName:    'Bustamante',
     description: DESCRIPTION_PILOTO,
     photo:       imgPiloto1Foto,
-    signatureImg: imgRecurso4,
-    signatureColor: '#13B981', // Verde
+    signatureImg: imgRecurso5,
+    signatureColor: '#13B981',
     brandImg:    null,
     align:       'left',
   },
@@ -24,8 +24,8 @@ export const pilotes = [
     lastName:    'Valenzuela',
     description: DESCRIPTION_PILOTO,
     photo:       imgPiloto2Foto,
-    signatureImg: imgRecurso3,
-    signatureColor: '#00D1FF', // Celeste
+    signatureImg: imgRecurso7,
+    signatureColor: '#00D1FF',
     brandImg:    null,
     align:       'right',
   },
@@ -35,8 +35,8 @@ export const pilotes = [
     lastName:    'Bustamante',
     description: DESCRIPTION_PILOTO,
     photo:       imgPiloto3Foto,
-    signatureImg: imgRecurso4,
-    signatureColor: '#13B981', // Verde
+    signatureImg: imgRecurso5,
+    signatureColor: '#13B981',
     brandImg:    null,
     align:       'left',
   },

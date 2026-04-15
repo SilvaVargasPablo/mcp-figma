@@ -7,7 +7,7 @@ import Footer        from './components/Footer.jsx';
 
 
 import { pilotes } from './data/team.js';
-import { imgNav1, imgNav2, imgNav3, imgRecurso6, imgRecurso7, imgRecurso5, imgNaveBg, imgNave01, imgNave02, imgNave03 } from './assets.js';
+import { imgNav1, imgNav2, imgNav3, imgRecurso7, imgRecurso5, imgNaveBg, imgNave01, imgNave02, imgNave03 } from './assets.js';
 
 // ─── App principal ────────────────────────────────────────────────────────────
 export default function App() {
@@ -72,7 +72,7 @@ export default function App() {
             <TiltCard
               imgNaveBg={imgNaveBg}
               imgNave01={imgNave01}
-              signatureImg={imgRecurso6}
+              signatureImg={imgRecurso5}
               title="Interactive City Card"
               description="Move your cursor over this card to experience a smooth 3D tilt animation, bringing depth and interactivity to your UI."
             />
