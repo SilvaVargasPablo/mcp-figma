@@ -50,7 +50,7 @@ export default function PilotCard({
             variants={{
               initial: { y: 120, opacity: 0, scale: 0.9 },
               visible: { y: 120, opacity: 0, scale: 0.9 },
-              hover: { y: 0, opacity: 1, scale: 1.05 }
+              hover: { y: 0, opacity: 1, scale:  1.1 }
             }}
             transition={{ type: 'spring', stiffness: 120, damping: 18 }}
             className="font-['M_PLUS_1'] text-white text-[clamp(2.5rem,10vw,4.5rem)] uppercase leading-none drop-shadow-2xl"

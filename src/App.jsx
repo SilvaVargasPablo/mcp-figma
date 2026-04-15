@@ -46,7 +46,7 @@ export default function App() {
         </section>
 
         {/* ── Separador ── */}
-        <div style={{ height: '120px' }} />
+        <div style={{ height: '80px' }} />
 
          {/* ── Sección Interactive Cards Navegantes ── */}
         <section
