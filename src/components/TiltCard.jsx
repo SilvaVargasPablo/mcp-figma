@@ -20,7 +20,7 @@ const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition
                                     src={imgNave01}
                                     alt={title}
                                     className="relative w-full h-full object-cover rounded-[12px]"
-                                    style={{ objectPosition: imageObjectPosition || 'center' }}
+                                    style={{ objectPosition: imageObjectPosition || 'center', marginTop: '5px' }}
                                 />
                             )}
                             {image && !imgNaveBg && (
