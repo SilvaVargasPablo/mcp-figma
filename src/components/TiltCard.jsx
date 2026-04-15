@@ -7,7 +7,7 @@ const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition
         >
             {/* Image: large left column on mobile, top on md+ */}
             <div className="flex-shrink-0 w-3/5 md:w-full overflow-hidden relative rounded-l-[var(--radius-card)] md:rounded-l-none md:rounded-t-[var(--radius-card)] group">
-                        <div className="p-2 relative" style={{ borderRadius: 'var(--radius-card)' }}>
+                        <div className="p-2 relative h-full md:aspect-[365/400]" style={{ borderRadius: 'var(--radius-card)' }}>
                             {imgNaveBg && (
                                 <img
                                     src={imgNaveBg}
@@ -19,7 +19,7 @@ const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition
                                 <img
                                     src={imgNave01}
                                     alt={title}
-                                    className="relative w-full object-cover rounded-[12px] translate-y-2 group-hover:scale-110 transition-transform duration-300"
+                                    className="absolute inset-0 w-full h-full object-cover rounded-[12px] group-hover:scale-105 transition-transform duration-300"
                                     style={{ objectPosition: imageObjectPosition || 'center' }}
                                 />
                             )}
