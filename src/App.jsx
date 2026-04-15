@@ -7,7 +7,7 @@ import Footer        from './components/Footer.jsx';
 
 
 import { pilotes } from './data/team.js';
-import { imgNav1, imgNav2, imgNav3, imgRecurso6, imgRecurso7, imgRecurso5, imgNaveBg, imgNave01 } from './assets.js';
+import { imgNav1, imgNav2, imgNav3, imgRecurso6, imgRecurso7, imgRecurso5, imgNaveBg, imgNave01, imgNave02, imgNave03 } from './assets.js';
 
 // ─── App principal ────────────────────────────────────────────────────────────
 export default function App() {
@@ -77,14 +77,14 @@ export default function App() {
             />
             <TiltCard
               imgNaveBg={imgNaveBg}
-              imgNave01={imgNave01}
+              imgNave01={imgNave02}
               signatureImg={imgRecurso7}
               title="Modern Design Card"
               description="Explore contemporary design patterns with interactive elements that respond to your mouse movements in real-time."
             />
             <TiltCard
               imgNaveBg={imgNaveBg}
-              imgNave01={imgNave01}
+              imgNave01={imgNave03}
               signatureImg={imgRecurso5}
               imageObjectPosition="center 60%"
               title="Creative Showcase Card"
