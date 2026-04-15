@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition }) => {
+const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition, imgNaveBg, imgNave01 }) => {
     return (
         <div
                 className="group rounded-[var(--radius-card)] shadow-2xl overflow-hidden cursor-pointer w-full text-white self-start flex flex-row items-stretch min-h-[420px] md:min-h-0 md:flex-col md:max-w-[365px]"
@@ -8,22 +8,27 @@ const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition
             {/* Image: large left column on mobile, top on md+ */}
             <div className="flex-shrink-0 w-3/5 md:w-full overflow-hidden relative rounded-l-[var(--radius-card)] md:rounded-l-none md:rounded-t-[var(--radius-card)]">
                         <div className="p-2 relative" style={{ borderRadius: 'var(--radius-card)' }}>
-                            <img
-                                src={image}
-                                alt={title}
-                                className="w-full h-full object-cover rounded-[12px]"
-                                style={{ objectPosition: imageObjectPosition || 'center' }}
-                            />
-
-                            {/* Overlay image (optional) - scales on card hover */}
-                            {/** Pass `overlayImage` prop to show this image over the base photo */}
-                            {/** It will zoom on hover using group-hover */}
-                            {typeof overlayImage !== 'undefined' && overlayImage && (
+                            {imgNaveBg && (
                                 <img
-                                    src={overlayImage}
-                                    alt={`${title} overlay`}
-                                    className="absolute inset-0 m-auto w-2/3 h-2/3 object-contain pointer-events-none transition-transform duration-500 group-hover:scale-110 rounded-[10px]"
-                                    style={{ top: '50%', transform: 'translateY(-50%)' }}
+                                    src={imgNaveBg}
+                                    alt={`${title} background`}
+                                    className="absolute inset-0 w-full h-full object-cover rounded-[12px]"
+                                />
+                            )}
+                            {imgNave01 && (
+                                <img
+                                    src={imgNave01}
+                                    alt={title}
+                                    className="relative w-full h-full object-cover rounded-[12px]"
+                                    style={{ objectPosition: imageObjectPosition || 'center' }}
+                                />
+                            )}
+                            {image && !imgNaveBg && (
+                                <img
+                                    src={image}
+                                    alt={title}
+                                    className="w-full h-full object-cover rounded-[12px]"
+                                    style={{ objectPosition: imageObjectPosition || 'center' }}
                                 />
                             )}
                         </div>

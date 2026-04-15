@@ -43,6 +43,8 @@ import imgCopecLogo_file from './assets/imgCopecLogo_41.svg';
 import imgRecurso7_file from './assets/imgRecurso7_42.svg';
 import imgRecurso5_file from './assets/imgRecurso5_43.svg';
 import imgRecurso6_file from './assets/imgRecurso6_44.svg';
+import imgNaveBg_file from './assets/imgNaveBg.png';
+import imgNave01_file from './assets/imgNave01.png';
 
 // ─── Assets extraídos del servidor MCP de Figma ────────────────────────────
 // Imágenes SVG/PNG servidas en localhost:3845
@@ -105,3 +107,5 @@ export const imgCopecLogo = imgCopecLogo_file;
 export const imgRecurso7 = imgRecurso7_file;
 export const imgRecurso5 = imgRecurso5_file;
 export const imgRecurso6 = imgRecurso6_file;
+export const imgNaveBg = imgNaveBg_file;
+export const imgNave01 = imgNave01_file;

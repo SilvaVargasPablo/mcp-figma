@@ -7,7 +7,7 @@ import Footer        from './components/Footer.jsx';
 
 
 import { pilotes } from './data/team.js';
-import { imgNav1, imgNav2, imgNav3, imgRecurso6, imgRecurso7, imgRecurso5 } from './assets.js';
+import { imgNav1, imgNav2, imgNav3, imgRecurso6, imgRecurso7, imgRecurso5, imgNaveBg, imgNave01 } from './assets.js';
 
 // ─── App principal ────────────────────────────────────────────────────────────
 export default function App() {
@@ -69,19 +69,22 @@ export default function App() {
           {/* Grid 3 columnas centradas */}
           <div className="flex flex-wrap gap-10 justify-center">
             <TiltCard
-              image={imgNav1}
+              imgNaveBg={imgNaveBg}
+              imgNave01={imgNave01}
               signatureImg={imgRecurso6}
               title="Interactive City Card"
               description="Move your cursor over this card to experience a smooth 3D tilt animation, bringing depth and interactivity to your UI."
             />
             <TiltCard
-              image={imgNav2}
+              imgNaveBg={imgNaveBg}
+              imgNave01={imgNave01}
               signatureImg={imgRecurso7}
               title="Modern Design Card"
               description="Explore contemporary design patterns with interactive elements that respond to your mouse movements in real-time."
             />
             <TiltCard
-              image={imgNav3}
+              imgNaveBg={imgNaveBg}
+              imgNave01={imgNave01}
               signatureImg={imgRecurso5}
               imageObjectPosition="center 60%"
               title="Creative Showcase Card"
