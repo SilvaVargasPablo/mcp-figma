@@ -1,6 +1,6 @@
 import {
   imgPiloto1Foto, imgPiloto2Foto, imgPiloto3Foto,
-  imgRecurso5, imgRecurso7,
+  signCarlosBustamante, signHernanValenzuela,
 } from '../assets.js';
 
 const DESCRIPTION_PILOTO =
@@ -13,10 +13,11 @@ export const pilotes = [
     lastName:    'Bustamante',
     description: DESCRIPTION_PILOTO,
     photo:       imgPiloto1Foto,
-    signatureImg: imgRecurso5,
-    signatureColor: '#13B981',
+    signatureImg: signCarlosBustamante,
+    signatureColor: '#00FFD1',
     brandImg:    null,
     align:       'left',
+    signatureAlign: 'left',
   },
   {
     id:          'hernan-valenzuela',
@@ -24,10 +25,11 @@ export const pilotes = [
     lastName:    'Valenzuela',
     description: DESCRIPTION_PILOTO,
     photo:       imgPiloto2Foto,
-    signatureImg: imgRecurso7,
-    signatureColor: '#00D1FF',
+    signatureImg: signHernanValenzuela,
+    signatureColor: '#00FFD1',
     brandImg:    null,
     align:       'right',
+    signatureAlign: 'right',
   },
   {
     id:          'carlos-bustamante-2',
@@ -35,10 +37,11 @@ export const pilotes = [
     lastName:    'Bustamante',
     description: DESCRIPTION_PILOTO,
     photo:       imgPiloto3Foto,
-    signatureImg: imgRecurso5,
-    signatureColor: '#13B981',
+    signatureImg: signCarlosBustamante,
+    signatureColor: '#00FFD1',
     brandImg:    null,
     align:       'left',
+    signatureAlign: 'left',
   },
 ];
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition, imgNaveBg, imgNave01 }) => {
+const NavigatorCard = ({ image, title, description, signatureImg, imageObjectPosition, imgNaveBg, imgNave01 }) => {
     return (
         <div
                 className="group rounded-[var(--radius-card)] shadow-2xl overflow-hidden cursor-pointer w-full text-white self-start flex flex-row items-stretch min-h-[420px] md:min-h-0 md:flex-col md:max-w-[365px]"
@@ -56,4 +56,4 @@ const TiltCard = ({ image, title, description, signatureImg, imageObjectPosition
     );
 };
 
-export default TiltCard;
+export default NavigatorCard;

@@ -15,8 +15,10 @@ export default function PilotCard({
   brandImg,
   align = 'left',
   contentAlign = 'left',
+  signatureAlign = 'left',
 }) {
   const isLeft = align === 'left';
+  const isSignatureLeft = signatureAlign === 'left';
 
   return (
     <motion.div
@@ -102,17 +104,17 @@ export default function PilotCard({
       </div>
 
       {/* ── Información Lateral ── */}
-      <div className={`flex flex-col flex-1 w-full max-w-[500px] md:max-w-[480px] md:self-start items-center text-center md:${contentAlign === 'right' ? 'md:items-end md:text-right' : 'md:items-start md:text-left'} md:mt-[45px]`}>
+      <div className={`flex flex-col flex-1 w-full max-w-[500px] md:max-w-[480px] md:self-start items-center text-center md:mt-[45px] ${contentAlign === 'right' ? 'md:items-end md:text-right' : 'md:items-start md:text-left'}`}>
         
         {signatureImg && (
           <div 
-            className="-mb-6 w-[123px] h-[90px] z-10 relative"
+            className="-mb-6 w-[123px] h-[90px] z-10 relative mx-auto md:mx-0"
             style={{ 
               '--fill-0': signatureColor || '#00FFD1', 
               '--stroke-0': signatureColor || '#00FFD1' 
             }}
           >
-            <img src={signatureImg} alt="Signature" className="h-full w-auto shrink-0 object-contain" />
+            <img src={signatureImg} alt="Signature" className={`h-full w-auto shrink-0 object-contain ${isSignatureLeft ? 'md:ml-0' : 'md:mr-0'}`} />
           </div>
         )}
 

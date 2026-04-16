@@ -45,6 +45,11 @@ import imgCar002_file from './assets/car-002.png';
 import imgCar003_file from './assets/car-003.png';
 import imgCar004_file from './assets/car-004.png';
 import imgCar005_file from './assets/car-005.png';
+import signCarlosBustamante_file from './assets/sign-carlos-bustamante.svg';
+import signHernanValenzuela_file from './assets/sign-hernan-valenzuela.svg';
+import signJuanPabloFigueroa_file from './assets/sign-juan-pablo-figueroa.svg';
+import signAmandaEcheverria_file from './assets/sign-amanda-echeverria.svg';
+import signAlfonsoBalidush_file from './assets/sign-alfonso-balidush.svg';
 
 // ─── Assets extraídos del servidor MCP de Figma ────────────────────────────
 // Imágenes SVG/PNG servidas en localhost:3845
@@ -109,3 +114,8 @@ export const imgCar002 = imgCar002_file;
 export const imgCar003 = imgCar003_file;
 export const imgCar004 = imgCar004_file;
 export const imgCar005 = imgCar005_file;
+export const signCarlosBustamante = signCarlosBustamante_file;
+export const signHernanValenzuela = signHernanValenzuela_file;
+export const signJuanPabloFigueroa = signJuanPabloFigueroa_file;
+export const signAmandaEcheverria = signAmandaEcheverria_file;
+export const signAlfonsoBalidush = signAlfonsoBalidush_file;

@@ -1,13 +1,13 @@
 import Navbar        from './components/Navbar.jsx';
 import HeroBanner    from './components/HeroBanner.jsx';
 import PilotCard     from './components/PilotCard.jsx';
-import TiltCard      from './components/TiltCard.jsx';
+import NavigatorCard from './components/NavigatorCard.jsx';
 import RallycoreCarousel from './components/RallycoreCarousel.jsx';
 import Footer        from './components/Footer.jsx';
 
 
 import { pilotes } from './data/team.js';
-import { imgNav1, imgNav2, imgNav3, imgRecurso7, imgRecurso5, imgNaveBg, imgNave01, imgNave02, imgNave03 } from './assets.js';
+import { imgNav1, imgNav2, imgNav3, imgRecurso7, imgRecurso5, imgNaveBg, imgNave01, imgNave02, imgNave03, signJuanPabloFigueroa, signAlfonsoBalidush, signAmandaEcheverria } from './assets.js';
 
 // ─── App principal ────────────────────────────────────────────────────────────
 export default function App() {
@@ -69,27 +69,27 @@ export default function App() {
 
           {/* Grid 3 columnas centradas */}
           <div className="flex flex-wrap gap-10 justify-center">
-            <TiltCard
+            <NavigatorCard
               imgNaveBg={imgNaveBg}
               imgNave01={imgNave01}
-              signatureImg={imgRecurso5}
-              title="Interactive City Card"
-              description="Move your cursor over this card to experience a smooth 3D tilt animation, bringing depth and interactivity to your UI."
+              signatureImg={signJuanPabloFigueroa}
+              title="Juan Pablo Figueroa"
+              description="Una descripción del piloto que nos diga algo que sea relevante y que nos haga mas cercano al corredor."
             />
-            <TiltCard
+            <NavigatorCard
               imgNaveBg={imgNaveBg}
               imgNave01={imgNave02}
-              signatureImg={imgRecurso7}
-              title="Modern Design Card"
-              description="Explore contemporary design patterns with interactive elements that respond to your mouse movements in real-time."
+              signatureImg={signAlfonsoBalidush}
+              title="Alfonso Balidush"
+              description="Una descripción del piloto que nos diga algo que sea relevante y que nos haga mas cercano al corredor."
             />
-            <TiltCard
+            <NavigatorCard
               imgNaveBg={imgNaveBg}
               imgNave01={imgNave03}
-              signatureImg={imgRecurso5}
+              signatureImg={signAmandaEcheverria}
               imageObjectPosition="center 60%"
-              title="Creative Showcase Card"
-              description="Discover innovative ways to present your content with engaging animations and smooth transitions that captivate users."
+              title="Amanda Echeverria"
+              description="Una descripción del piloto que nos diga algo que sea relevante y que nos haga mas cercano al corredor."
             />
           </div>
         </section>
