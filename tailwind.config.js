@@ -49,6 +49,15 @@ export default {
         '4xl': '30px',
         '5xl': '47px',
       },
+      animation: {
+        'carousel-pulse': 'carouselPulse 0.4s ease-out',
+      },
+      keyframes: {
+        carouselPulse: {
+          '0%': { transform: 'scale(0.95)' },
+          '100%': { transform: 'scale(1)' },
+        },
+      },
     },
   },
   plugins: [],

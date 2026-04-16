@@ -1,8 +1,8 @@
 import Navbar        from './components/Navbar.jsx';
 import HeroBanner    from './components/HeroBanner.jsx';
 import PilotCard     from './components/PilotCard.jsx';
-import ImageSlider   from './components/ImageSlider.jsx';
 import TiltCard      from './components/TiltCard.jsx';
+import RallycoreCarousel from './components/RallycoreCarousel.jsx';
 import Footer        from './components/Footer.jsx';
 
 
@@ -97,18 +97,8 @@ export default function App() {
         {/* ── Separador ── */}
         <div style={{ height: '80px' }} />
 
-        {/* ── Slider de imágenes ── */}
-        <section
-          id="galeria"
-          style={{
-            maxWidth: '1440px',
-            margin: '0 auto',
-            padding: '0 159px',
-          }}
-          aria-label="Galería de fotografías del equipo"
-        >
-          <ImageSlider />
-        </section>
+        {/* ── Rallycore Carousel ── */}
+        <RallycoreCarousel />
 
         {/* ── Separador ── */}
         <div style={{ height: '80px' }} />

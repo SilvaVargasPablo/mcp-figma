@@ -40,6 +40,11 @@ import imgNaveBg_file from './assets/imgNaveBg.png';
 import imgNave01_file from './assets/imgNave01.png';
 import imgNave02_file from './assets/imgNave02.png';
 import imgNave03_file from './assets/imgNave03.png';
+import imgCar001_file from './assets/car-001.png';
+import imgCar002_file from './assets/car-002.png';
+import imgCar003_file from './assets/car-003.png';
+import imgCar004_file from './assets/car-004.png';
+import imgCar005_file from './assets/car-005.png';
 
 // ─── Assets extraídos del servidor MCP de Figma ────────────────────────────
 // Imágenes SVG/PNG servidas en localhost:3845
@@ -99,3 +104,8 @@ export const imgNaveBg = imgNaveBg_file;
 export const imgNave01 = imgNave01_file;
 export const imgNave02 = imgNave02_file;
 export const imgNave03 = imgNave03_file;
+export const imgCar001 = imgCar001_file;
+export const imgCar002 = imgCar002_file;
+export const imgCar003 = imgCar003_file;
+export const imgCar004 = imgCar004_file;
+export const imgCar005 = imgCar005_file;
