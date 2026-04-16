@@ -95,8 +95,8 @@ export default function RallycoreCarousel() {
               onClick={() => setCurrentSlide(index)}
               className={`h-2 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? 'w-8 bg-[#00f4fe]'
-                  : 'w-2 bg-[#474746] hover:bg-[#00f4fe]/50'
+                  ? 'w-8 bg-[#00FFD1]'
+                  : 'w-2 bg-[#474746] hover:bg-[#00FFD1]/50'
               }`}
             />
           ))}
