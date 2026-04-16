@@ -53,7 +53,7 @@ export default function RallycoreCarousel() {
 
             {/* Category Badge */}
             <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6">
-              <span className="px-3 py-1 md:px-4 md:py-2 bg-white/10 backdrop-blur-md rounded-full text-white/80 text-xs md:text-sm font-medium tracking-wider">
+              <span className="px-3 py-1 md:px-4 md:py-2 bg-white/10 backdrop-blur-md rounded-full text-white/80 text-xs md:text-sm font-medium tracking-wider font-['M_PLUS_1']">
                 {slides[currentSlide].category}
               </span>
             </div>

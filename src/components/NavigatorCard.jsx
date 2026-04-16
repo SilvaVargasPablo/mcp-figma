@@ -44,7 +44,7 @@ const NavigatorCard = ({ image, title, description, signatureImg, imageObjectPos
                 )}
 
                 <div className="mt-20 md:mt-2">
-                    <h3 className="text-2xl font-['M_PLUS_1'] font-bold text-white leading-tight mb-4">
+                    <h3 className="text-2xl font-monument font-bold text-white leading-tight mb-4">
                         {title}
                     </h3>
                     <p className="text-base font-['M_PLUS_1'] text-slate-300 leading-relaxed max-w-[360px]">

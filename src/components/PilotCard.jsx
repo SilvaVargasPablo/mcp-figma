@@ -124,7 +124,7 @@ export default function PilotCard({
             visible: { opacity: 1, y: 0 }
           }}
         >
-          <h2 className="font-['M_PLUS_1'] text-white text-[clamp(1.5rem,5vw,2.5rem)] uppercase leading-[1.1]">
+          <h2 className="font-monument text-white text-[clamp(1.5rem,5vw,2.5rem)] uppercase leading-[1.1]">
             <span className="block">{name}</span>
             <span className="block text-white opacity-80">{lastName}</span>
           </h2>

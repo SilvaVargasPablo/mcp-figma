@@ -57,7 +57,7 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-4 max-w-[340px] w-full">
-            <p className="text-[14px] text-white font-medium">Suscríbete a nuestro newsletter</p>
+            <p className="text-[14px] text-white font-medium font-['M_PLUS_1']">Suscríbete a nuestro newsletter</p>
             <div className="flex items-center h-[48px] bg-white/5 border border-white/10 rounded-sm overflow-hidden">
               <input 
                 type="email" 
@@ -108,8 +108,8 @@ function AppStoreButton({ logo, text }) {
     <div className="flex items-center gap-2 px-3 py-1.5 bg-black/20 border border-white/10 rounded-lg cursor-pointer hover:bg-black/40 transition-all">
       <img src={logo} alt={text} className="w-4 h-4 object-contain" />
       <div className="flex flex-col leading-tight">
-        <span className="text-[6px] text-white/50 uppercase">Order now on</span>
-        <span className="text-[10px] text-white font-bold whitespace-nowrap">{text}</span>
+        <span className="text-[6px] text-white/50 uppercase font-['M_PLUS_1']">Order now on</span>
+        <span className="text-[10px] text-white font-bold whitespace-nowrap font-['M_PLUS_1']">{text}</span>
       </div>
     </div>
   );

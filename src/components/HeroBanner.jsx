@@ -46,7 +46,7 @@ export default function HeroBanner() {
       />
 
       {/* Contenido del hero */}
-      <div className="relative z-10 flex flex-col justify-start h-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 lg:px-[158px] pt-20 md:pt-[201px]">
+      <div className="relative z-10 flex flex-col justify-start h-full max-w-[1440px] mx-auto px-4 sm:px-6 md:px-12 lg:px-[158px] pt-32 md:pt-[201px]">
         {/* Logo Peugeot */}
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
@@ -61,7 +61,7 @@ export default function HeroBanner() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="font-['M_PLUS_1'] text-white leading-none uppercase tracking-tight text-3xl md:text-[64px] max-w-[603px]"
+          className="font-monument text-white leading-none uppercase tracking-tight text-3xl md:text-[64px] max-w-[603px]"
         >
           SAG Rally Team
         </motion.h1>
